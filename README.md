@@ -15,8 +15,8 @@ Dash, Dash Bootstrap, Pandas, GeoPandas, Plotly, Mapbox API Key
 
 ## Authors
 
-Henry Castillo
-contact info: hcasti@pratt.edu
+Henry Castillo,
+### contact info: hcasti@pratt.edu
 
 Version History
 
