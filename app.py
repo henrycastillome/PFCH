@@ -21,8 +21,8 @@ import dash_bootstrap_components as dbc
 load_dotenv()
 mapbox_key = os.environ['apikey']
 
-DATA = '/Users/henrycastillomelo/Documents/Full stack Bootcamp/Course 7 Ptyhon for Data science, AI and else/Project Pratt/assets/restaurant_data.csv'
-DATA_BARCHART = 'https://raw.githubusercontent.com/henrycastillome/PFCH/main/violation_data.csv'
+DATA = 'https://raw.githubusercontent.com/henrycastillome/PFCH/main/assets/restaurant_data.csv'
+DATA_BARCHART = 'https://raw.githubusercontent.com/henrycastillome/PFCH/main/assets/violation_data.csv'
 violation_data = pd.read_csv(DATA_BARCHART)
 
 suppress_callback_exceptions=True
