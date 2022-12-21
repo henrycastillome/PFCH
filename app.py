@@ -319,7 +319,7 @@ def update_plot(search_term):
         
 
         # filter the data based on the search term
-        data_table= '/Users/henrycastillomelo/Documents/Full stack Bootcamp/Course 7 Ptyhon for Data science, AI and else/remainings project pratt/restaurant_data_table.csv'
+        data_table= 'https://raw.githubusercontent.com/henrycastillome/PFCH/main/assets/restaurant_data_table.csv'
         df=pd.read_csv(data_table)
 
 
