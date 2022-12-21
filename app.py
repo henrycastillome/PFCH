@@ -62,8 +62,8 @@ sidebar = html.Div(
         dbc.Nav(
             [
                 dbc.NavLink("Analytics", href="/", active="exact"),
-                dbc.NavLink("Search bar", href="/page-1", active="exact"),
-                dbc.NavLink("About", href="/page-2", active="exact"),
+                dbc.NavLink("Search bar", href="/search", active="exact"),
+                dbc.NavLink("About", href="/about", active="exact"),
             ],
             vertical=True,
             pills=True,
@@ -139,7 +139,7 @@ def render_page_content(pathname):
     ], className='Three-columns') 
         ]
 
-    elif pathname == "/page-1":
+    elif pathname == "/search":
         return [
                 html.Div([
                 html.Br(),
@@ -152,26 +152,29 @@ def render_page_content(pathname):
         
     
                 ]
-    elif pathname == "/page-2":
-        return[
-            html.Div([ 
+    elif pathname == "/about":
+         return[
+            html.Div([
                 html.Div([
                 html.H1(children="Data Visualization of New York City's Restaurant Inspection", style={'text-align':'center'}),
-                html.H6(children="by Henry Castillo", style={'text-align':'center'}),
                 html.Br(),
-                html.P(children="Understanding the violation problem of New York City's restaurant. It uses the dataset inspection by the Deparment of Health and Mental Hygiene. " + 
-                               "I was able to clean the data using python. Then, I could  plot five types of figures using plotly and show two scattermapbox, one choroplet map, one barchar and one scatterbox. Also, " + 
-                               " I could add a search bar where users can type their favorite restaurant and print a table and they can see the violations the their favorite restaurant has" +
+                html.P(children="Understanding the violation problem of New York City's restaurant. I used the dataset inspection by the Deparment of Health and Mental Hygiene. " +
+                               "I was able to clean the data using python. Then, I could  plot five types of figures using plotly and show two scattermapbox, one choroplet map, one barchar and one scatterbox. Also, " +
+                               " I could add a search bar where users can type their favorite restaurant and print a table and they can see the violations the their favorite restaurant has." +
                                " And lastly, I used the library Dash to create this site", style={'text-align':'left'}),
                 html.Br(),
+                html.H6(children="Author: Henry Castillo"),
+                html.P(children="Full Stack Developer- Master's student"),
+                html.Br(),
                 html.H5(children="Thanks for checking my work and let's get in touch. This is my email"),
+
                 html.U(children="hcasti40@pratt.edu")],
                 style={'background-color':'#313131', 'border-radius':'25px', 'padding':'20px'}),
-                
+
 
             ])
 
-            
+
         ]
 
 

@@ -52,7 +52,7 @@ def create_choroplet_map(gdf_choroplet, categories, critical, data_geojson, mapb
 
 	fig.update_layout(
 		title=go.layout.Title(
-		text="Is your borough the dirtiest? hover and find out the total",
+		text="Is your borough the dirtiest? hover and find out the total in critical situation",
 		xref="paper",
 		x=0
 	),
