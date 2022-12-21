@@ -159,7 +159,7 @@ def render_page_content(pathname):
                 html.H1(children="Data Visualization of New York City's Restaurant Inspection", style={'text-align':'center'}),
                 html.Br(),
                 html.P(children="Understanding the violation problem of New York City's restaurant. I used the dataset inspection by the Deparment of Health and Mental Hygiene. " +
-                               "I was able to clean the data using python. Then, I could  plot five types of figures using plotly and show two scattermapbox, one choroplet map, one barchar and one scatterbox. Also, " +
+                               "I was able to clean the data using python and the library Pandas. Then, I could  plot five types of figures using plotly and show two scattermapbox, one choroplet map, one barchar and one scatterbox. Also, " +
                                " I could add a search bar where users can type their favorite restaurant and print a table and they can see the violations the their favorite restaurant has." +
                                " And lastly, I used the library Dash to create this site", style={'text-align':'left'}),
                 html.Br(),
@@ -348,7 +348,7 @@ def update_plot(search_term):
         legend_title_font_color='#f1f1f1',
         font=dict(
             family="Be Vietnam Pro, sans-serif",
-            size=18,
+            size=12,
             color='#f1f1f1')     )
 
         return fig
